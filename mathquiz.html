@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+
+<span id="player1name"></span>
+<span id="player1score"></span>
+<br>
+<br>
+<span id="player2name"></span>
+<span id="player2score"></span>
+
+
+<div class="container">
+	<center>
+		<h2 style="color: white;">Math Quiz</h2>
+        <h3 id="QuestionPlayer"></h3>
+		<h3 id="AnswerPlayer"></h3>
+
+		<div id="output" class="col-lg-6"></div>
+
+		<br>
+		<br>
+
+		<label>Send Your Question: <b style="color: red">Try putting 2 numbers and a operation</b></label>
+
+		<input type="text" id="word4" class="form-control" placeholder="Equation">
+
+		<br>
+
+		<button onclick="Send1()" class="btn btn-primary" style="width: 30%;">Send</button>
+
+	</center>
+</div>
+
+<script src="mathquiz.js"></script>
+</body>
+</html>
